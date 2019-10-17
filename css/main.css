@@ -1,0 +1,158 @@
+*,*:after,*:before{
+/*Prefixos servem para adaptar em diversos browser's. mas podemos fazer o codigo CSS3 e 
+depois transferir para o site "prefixer" ele faz a adaptação do css e prefixos*/
+	-webkit-box-sizing:  border-box;
+		-moz-box-sizing:  border-box;
+			box-sizing: border-box;
+}
+
+/*ESta regra permite fazer o clear ao elemento pai dos elementos em FLOAT
+Basta atribuir a regra ao elemento PAI.
+Vai fazer com que ele conte a altura automaticamente para responsive. Self clear limita
+o espaço para os outros elementos pare eles não subirem e embabralhar o layout*/
+.self-clear:before, .self-clear:after{
+	content:"";
+	display: table;
+}
+
+.self-clear:after{
+	clear: both;
+}
+
+/*hack para internet EXplore*/
+.self-clear:after{
+	*zoom:1;
+
+}
+html{
+
+	font-family: Arial,sans-serif;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 15px 0;
+
+}
+
+p{
+	font-size: .9rem;
+	line-height: 22px;
+	margin: 10px 0;
+}
+
+.container{
+	max-width: 1020px;
+	margin: 0 auto;
+	
+	background-color: rgb(100,100,150);
+}
+
+img, video, object{
+	max-width: 100%;
+	height: auto;
+}
+/*--------------------------------------*/
+/*--------------HEADER------------------*/
+/*--------------------------------------*/
+
+header{
+
+	width: 100%;
+	height: 80px;
+	background-color:  pink;
+	color:#fff;
+}
+
+/*--------------------------------------*/
+/*--------------ASIDE------------------*/
+/*--------------------------------------*/
+.side-bar{
+	float: left;
+	width: 25%;
+	
+	background-color: rgb(100,100,150);
+	padding: 15px;
+}
+
+.side-bar-ele  {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 10px;
+
+}
+.side-bar-ele img {
+	border-radius: 50%;
+	padding: 15px;
+
+}
+.side-bar-ele p, .side-bar-ele h3 {
+	text-align: center;
+	color:#fff;
+
+}
+
+.my-nav ul li{
+	line-height: 35px;
+	color: #fff;
+	border-bottom: 1px solid #ccc;
+
+}
+/*--------------------------------------*/
+/*--------------MAIN--------------------*/
+/*--------------------------------------*/
+.main{
+	float: left;
+	width: 75%;
+	background-color: rgb(100,200,150);
+	padding: 15px;
+}
+
+.layout-4{
+	float: left;
+	width: 25%;
+	border: 5px solid transparent;
+	padding: 10px;
+}
+
+.layout-3{
+	float: left;
+	width: 33.333%;
+	border: 5px solid transparent;
+	
+}
+.layout-3 img{
+	border-radius: 50%;
+	padding: 20px;
+
+}
+
+.layout-3 h3{
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.layout-3 p{
+	text-align: center;
+}
+
+.layout-2{
+	float: left;
+	width: 50%;
+	border: 5px solid transparent;
+	
+}
+/*--------------------------------------*/
+/*--------------footer------------------*/
+/*--------------------------------------*/
+.my-footer{
+	width: 100%;
+	background-color: #000;
+	height: 70px;
+	color: #fff;
+	text-align: right;
+	clear: both;
+	padding: 10px;
+}

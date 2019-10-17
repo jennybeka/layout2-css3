@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="author" content="Nuno Pereira">
+
+  <title>
+    conceitos de layout
+  </title>
+<!-- importar o css externo para dentro do nosso HTML 
+  1º importamos o reset e plugins e em ultimo o nosso CSS -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <style type="text/css">
+
+
+
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>HEADER</h1>
+  </header>
+  <!-- inicio container -->
+
+  <div class="container"> 
+    <aside class="side-bar">
+      <h3>ASIDE</h3>
+
+      <nav class="my-nav">
+        <ul>
+          
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>WORK</li>
+          <li>CONTACT</li>
+
+        </ul>
+      </nav>
+      <div class="side-bar-ele">
+        <img src="https://picsum.photos/id/242/300">
+        <h3>Aside 1</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+      </div>
+
+      <div class="side-bar-ele">
+        <img src="https://picsum.photos/id/210/300">
+        <h3>Aside 2</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+      </div>
+
+      <div class="side-bar-ele">
+        <img src="https://picsum.photos/id/235/300">
+        <h3>Aside 3</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+      </div>
+    </aside>
+
+
+
+    <main class="main">
+     <h1>LAYOUT-4</h1> 
+     <!-- inserir nova linha para ser o ELE PAI dos ele a flutuar -->
+
+     <DIV class="row self-clear">
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/204/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/215/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/214/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/202/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/209/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/217/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/204/300">
+       </div>
+       <div class="layout-4">
+         <img src="https://picsum.photos/id/215/300">
+       </div>
+
+
+
+     </DIV> <!-- end div row -->
+
+     <h1>LAYOUT-3</h1>
+     <div class="row self-clear">
+
+      <div class="layout-3">
+        <img src="https://picsum.photos/id/204/300">
+        <h3>Titulo 1</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+
+
+      </div>
+      <div class="layout-3">
+        <img src="https://picsum.photos/id/204/300">
+        <h3>Titulo 1</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+
+
+      </div>
+      <div class="layout-3">
+        <img src="https://picsum.photos/id/204/300">
+        <h3>Titulo 1</h3>
+        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. passagens com Lorem Ipsum, versões do Lorem Ipsum.</p>
+
+
+      </div>
+
+
+
+
+    </div><!-- end div row -->
+    <!-- TINYPNG- Site para compactar imagens mantendo a qualidade-->
+
+
+    <h1>LAYOUT 2</h1>
+
+    <div class="row self-clear">
+
+      <div class="layout-2">
+        <img src="https://picsum.photos/id/202/700/1050">
+      </div>
+
+
+      <div class="layout-2">
+
+
+      <!-- Nested columns- Abrir um novo laoyout de colunas dentro da segunda coluna -->
+
+      <div class="row self-clear"> 
+
+          <div class="layout-2">
+           <img src="https://picsum.photos/id/217/600">
+         </div>
+         <div class="layout-2">
+           <img src="https://picsum.photos/id/211/600">
+         </div>
+         <div class="layout-2">
+           <img src="https://picsum.photos/id/219/600">
+         </div>
+         <div class="layout-2">
+           <img src="https://picsum.photos/id/217/600">
+         </div>
+         <div class="layout-2">
+           <img src="https://picsum.photos/id/213/600">
+         </div>
+         <div class="layout-2">
+           <img src="https://picsum.photos/id/220/600">
+         </div>
+
+       </div><!-- end div row -->
+
+     </div>
+
+   </div><!-- end div row -->
+
+
+ </main>
+
+ <footer class="my-footer">
+   <p>All rights reserve, 2019.</p>
+ </footer>
+
+
+</div> <!-- end container -->
+</body>
+</html>
